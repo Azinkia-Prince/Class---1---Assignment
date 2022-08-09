@@ -52,5 +52,146 @@ void main() {
 
   print(myJasonFile);
 
-  
+  //For Each Loop
+
+  myJasonFile.forEach((element) => {print(element['Name'])});
+
+  //Equality and Relational Operators
+
+  if (a > 20) {
+    print("$a is greater than 20");
+  } else {
+    print("$a is less than 20");
+  }
+  ;
+
+  if (a == b) {
+    print("True!");
+  } else {
+    print("False");
+  }
+  ;
+
+  if (a >= 15) {
+    print("True!");
+  } else {
+    print("False!");
+  }
+  ;
+
+  if (a != 10) {
+    print("a is not equal to 10");
+  } else {
+    print("a is equal to 10");
+  }
+  ;
+
+  //Type-Test Operators
+
+  print(a is String ? "'a' is a String." : "'a' is not a String.");
+  print(a is! String ? "'a' is not a String." : "'a' is a String.");
+
+  //Assignment Operators
+
+  print(a += c); //a+=c => a=a+c where, the value of a is now = 40
+  print(a -= c); //a-=c => a=a-c
+  print(a *= c); //a*=c => a=a*c
+  // print(a /= c); //a+=c => a=a+c //     [Not Understood]
+
+  //Logical Operators
+
+  if (a >= 12 && a <= 20) {
+    print("$a is bitween 12-20");
+  } else {
+    print("$a is not in the list");
+  }
+  ;
+
+  if (a >= 12 || a <= 20) {
+    print("$a is in the list");
+  } else {
+    print("$a is not in the list");
+  }
+  ;
+
+  if (!(a >= 12 || a <= 20)) {
+    print("$a is in the list");
+  } else {
+    print("$a is not in the list");
+  }
+  ;
+
+  //Loops
+
+  for (a = 10; a <= 20; a++) {
+    print(a);
+  }
+  ;
+
+  print("------------------");
+
+  int k = 25;
+
+  while (k <= 30) {
+    print(k);
+    k++;
+  }
+  ;
+
+  print("------------------");
+
+  do {
+    print(k);
+    k++;
+  } while (k <= 35);
+
+  print("------------------");
+
+  int aA = 5;
+  int bB = 10;
+
+  var sign = "a"; // need to include the correct value
+
+  //Switch Case
+
+  switch (sign) {
+    case '+':
+      print(aA + bB);
+      break;
+
+    case '-':
+      print(aA - bB);
+      break;
+
+    case '*':
+      print(aA * bB);
+      break;
+
+    case '/':
+      print(aA / bB);
+      break;
+
+    default:
+      print("Wrong Value !");
+      break;
+  }
+  ;
+
+  myFunction();
+  myFunction2();
+  print(myFunction3(5,5));
+}
+
+//function
+
+myFunction() {
+  print("Azinkia Prince"); //normal funtion
+}
+
+myFunction2() => print("Sumaya Shikder"); //arrow or fat arrow funtion
+
+
+myFunction3(int m, int n){  //paramiterized function
+  return m+n;
+
 }
