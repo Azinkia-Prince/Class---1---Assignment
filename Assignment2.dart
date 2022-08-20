@@ -1,4 +1,5 @@
 import 'documents.dart';
+
 void main() {
   //Spread Operator means old value merge with new ones
 
@@ -45,7 +46,9 @@ void main() {
 
   normalp(a, b) {
     print(a + b); //function using normal perameter
-  };
+  }
+
+  ;
 
   normalp(5, 5);
 
@@ -53,7 +56,9 @@ void main() {
     print(a1);
     print(b1);
     print(c1); //sound - record1
-  };
+  }
+
+  ;
 
   positinalp(null, null, 100);
 
@@ -63,7 +68,9 @@ void main() {
     print(a1);
     print(b1);
     print(c1); //sound - record2
-  };
+  }
+
+  ;
 
   npositinalp(200, b1: null, c1: null);
 
@@ -73,7 +80,9 @@ void main() {
 
   exFunc() {
     print("Hello Boss");
-  };
+  }
+
+  ;
 
   newFunc1(exFunc);
   var object = newClass();
@@ -84,25 +93,18 @@ void main() {
   var setObject = getsetClass();
   setObject.setAge = 50;
   print(setObject.getAge);
-
-
-
-
 }
 
+// Higher order function part
 
 newFunc1(Function function) {
   function();
 }
 
-
 //Class Creation
 
-
-class newClass{
-  newClassFunction(){
+class newClass {
+  newClassFunction() {
     print("Hello Bangladesh");
   }
-
 }
-
